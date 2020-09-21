@@ -1,2 +1,2 @@
 #!/bin/bash
-man bash | sed 's/\s/\n/g' | sort | uniq -c | sort -n | qwk 'length($2) > 3' | tail -3
+man bash | grep -oi "[[:alpha:]]\{4,\}" | tr [:upper:] [:lower:] | sort | uniq -c | sort -nr | head -3

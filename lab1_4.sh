@@ -1,6 +1,6 @@
 #!/bin/bash
-if [ $PWD = "/home/user/skript" ]
-then echo $PWD
+if [ $PWD = $HOME.* ]
+then echo $HOME
 exit 0
 else echo "ERROR"
 exit 1
